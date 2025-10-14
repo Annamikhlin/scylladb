@@ -116,8 +116,7 @@ private:
             _sem.make_tracking_only_permit(_s.schema(), "make-querier", timeout, {}),
             range,
             _s.schema()->full_slice(),
-            nullptr,
-            tombstone_gc_state(nullptr));
+            nullptr);
     }
 
     static query_id make_cache_key(unsigned key) {
